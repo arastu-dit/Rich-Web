@@ -1,0 +1,36 @@
+h1 {
+  font-family: arial black;
+  font-style: italic;
+  font-size: 35px;
+}
+
+#content {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5; 
+    height: 200px;
+    
+    
+}
+
+#sidebar {
+  
+  position: relative;
+  left: 280px;
+  bottom: 215px; 
+  border: 1px solid black;
+  width: 100px;
+}
+
+address {
+  position: relative;
+  bottom: 80px;
+  left: 5px;
+  font-weight: bold;
+  
+}
+
+li {
+list-style-type: none;
+}
