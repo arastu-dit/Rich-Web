@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+<style>
+input[type=text] {
+  font-size: 2em;
+  text-align: right;
+  border-radius: 5px;
+  width: 240px;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 1%;
+}
+input[type=button] {
+  font-size: 1.1em;
+  border-radius: 5px;
+  width: 50px;
+}
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-item {
+  text-align: center;
+  padding: .5em;;
+  font-size: 1em;
+  flex-grow: 1;
+  margin: 0 5px 5px 0;
+}
+#calculator {
+  width: 250px;
+  font-size: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}
+</style>
+<style id="jsbin-css">
+input[type=text] {
+  font-size: 2em;
+  text-align: right;
+  border-radius: 5px;
+  width: 240px;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 1%;
+}
+button {
+  font-size: 1.1em;
+  border-radius: 5px;
+  width: 50px;
+}
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-item {
+  text-align: center;
+  padding: .5em;;
+  font-size: 1em;
+  flex-grow: 1;
+  margin: 0 5px 5px 0;
+}
+#calculator {
+  width: 250px;
+  font-size: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}
+</style>
+</head>
+<body>
+  <div id="calculator">
+    <form name = "calculator">
+    <input type="text" id='txtField' disabled placeholder='0' name = "answer">
+    <div class="flex-container">
+      <input type ="button" value = "(" onclick="calculator.answer.value += '('" class="flex-item" />
+      <input type ="button" value = ")" onclick="calculator.answer.value += ')'" class="flex-item" />
+      <input type ="button" value = "±" onclick="calculator.answer.value += '±'" class="flex-item" />
+      <input type ="button" value = "÷" onclick="calculator.answer.value += '/'" class="flex-item" />
+      <input type ="button" value = "7" onclick="calculator.answer.value += '7'" class="flex-item" />
+      <input type ="button" value = "8" onclick="calculator.answer.value += '8'" class="flex-item" />
+      <input type ="button" value = "9" onclick="calculator.answer.value += '9'" class="flex-item" />
+      <input type ="button" value = "x" onclick="calculator.answer.value += '*'" class="flex-item" />
+      <input type ="button" value = "4" onclick="calculator.answer.value += '4'" class="flex-item" />
+      <input type ="button" value = "5" onclick="calculator.answer.value += '5'" class="flex-item" />
+      <input type ="button" value = "6" onclick="calculator.answer.value += '6'" class="flex-item" />
+      <input type ="button" value = "-" onclick="calculator.answer.value += '-'" class="flex-item" />
+      <input type ="button" value = "1" onclick="calculator.answer.value += '1'" class="flex-item" />
+      <input type ="button" value = "2" onclick="calculator.answer.value += '2'" class="flex-item" />
+      <input type ="button" value = "3" onclick="calculator.answer.value += '3'" class="flex-item" />
+      <input type ="button" value = "+" onclick="calculator.answer.value += '+'" class="flex-item" />
+      <input type ="button" value = "0" onclick="calculator.answer.value += '0'" class="flex-item" />
+      <input type ="button" value = "." onclick="calculator.answer.value += '.'" class="flex-item" />
+      <input type ="button" id='clear' value = "C" onclick="calculator.answer.value = ''" class="flex-item" />
+      <input type ="button" id ='equals' value = "=" onclick="calculator.answer.value = eval(calculator.answer.value)" class="flex-item" />
+    </div>
+    </form>  
+  </div>
+
+</html>
+<script id="jsbin-javascript">
+function Answers(x) {
+    
+    if (operation == '+') {
+        operation = '+';
+    } else if (operation == '-') {
+        operation = '-';
+    } else if (operation == '/') {
+        operation = '/';
+    } else if (operation == '*') {
+        operation = '*';
+    } else {
+       
+        Selection(operation);
+    }
+    return operation;
+}
+</script>
+
+<script id="jsbin-source-css" type="text/css">input[type=text] {
+  font-size: 2em;
+  text-align: right;
+  border-radius: 5px;
+  width: 240px;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 1%;
+}
+button {
+  font-size: 1.1em;
+  border-radius: 5px;
+  width: 50px;
+}
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-item {
+  text-align: center;
+  padding: .5em;;
+  font-size: 1em;
+  flex-grow: 1;
+  margin: 0 5px 5px 0;
+}
+#calculator {
+  width: 250px;
+  font-size: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">
+
+function Answers(x) {
+    
+    if (operation == '+') {
+        operation = '+';
+    } else if (operation == '-') {
+        operation = '-';
+    } else if (operation == '/') {
+        operation = '/';
+    } else if (operation == '*') {
+        operation = '*';
+    } else {
+       
+        Selection(operation);
+    }
+    return operation;
+}</script>
