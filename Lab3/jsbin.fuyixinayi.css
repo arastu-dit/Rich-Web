@@ -1,0 +1,41 @@
+.left-col {
+  float: center;
+  width: 200px;
+  margin-right: 24px;
+  text-align: center;
+}
+
+button {
+  font-size: 1.1em;
+  border-radius: 5px;
+  width: 80px;
+  font-family: Verdana;
+}
+
+.splits-list
+{
+  float: center;
+  width: 200px;
+  margin-right: 24px;
+  text-align: center;
+  
+}
+
+.right-col {
+  font-size: 1em;
+  float: right;
+  width: 120px;
+  position: relative;
+  bottom: 180px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+canvas {
+  float: center;
+  position: relative;
+  width: 200px;
+  left: 50px;
+  top: 10px;
+  
+}
